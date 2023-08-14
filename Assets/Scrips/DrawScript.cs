@@ -10,20 +10,16 @@ public class DrawScript : MonoBehaviour
     public bool isDrawing;
 
     public Transform parentFullShape;
-   // public Collider2D[] circleDetection;
+
     private GameObject instNib;
     public List<GameObject> nibsList;
-    void Start()
-    {
-       // print($"nibPrefab.transform.GetComponent<CircleCollider2D>().radius{nibPrefab.transform.GetComponent<CircleCollider2D>().radius}");
-       
-    }
+ 
 
     // Update is called once per frame
     void Update()
     {
         TakeInputDrawNipObj();
-       // print($"Input.mousePosition{Input.mousePosition}");
+    
     }
 
 
@@ -31,7 +27,7 @@ public class DrawScript : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            //circleDetection = Physics2D.OverlapCircleAll(Camera.main.ScreenToWorldPoint(Input.mousePosition), 0.1f);
+           
 
            
                 isDrawing = true;
@@ -44,14 +40,6 @@ public class DrawScript : MonoBehaviour
         }//.........
 
 
-        //if (Input.GetMouseButtonUp(0))
-        //{
-        //    foreach (GameObject dot in nibsList)
-        //    {
-        //        dot.GetComponent<Rigidbody2D>().isKinematic = false;
-        //    }
-
-        //}
 
 
 
